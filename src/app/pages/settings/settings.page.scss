@@ -1,0 +1,85 @@
+/**
+ * Estilos de la página de Configuración
+ */
+
+// Card principal
+ion-card {
+  margin-bottom: 24px;
+  
+  ion-card-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.1rem;
+    
+    ion-icon {
+      font-size: 24px;
+    }
+  }
+  
+  ion-card-content {
+    p {
+      margin: 8px 0;
+      line-height: 1.5;
+    }
+  }
+}
+
+// Título de sección
+h3 {
+  color: var(--ion-color-dark);
+  margin-bottom: 12px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+// Items de la lista
+ion-item {
+  --padding-top: 12px;
+  --padding-bottom: 12px;
+  margin-bottom: 8px;
+  
+  ion-label {
+    h2 {
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    
+    ion-note {
+      font-size: 0.85rem;
+    }
+  }
+}
+
+// Input de máximo de tareas
+.max-tasks-input {
+  max-width: 80px;
+  text-align: center;
+  --padding-start: 8px;
+  --padding-end: 8px;
+}
+
+// Card informativa
+.info-card {
+  background: var(--ion-color-light);
+  
+  ion-card-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    
+    ion-icon {
+      font-size: 24px;
+      color: var(--ion-color-primary);
+      flex-shrink: 0;
+      margin-top: 4px;
+    }
+    
+    p {
+      margin: 0;
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+  }
+}

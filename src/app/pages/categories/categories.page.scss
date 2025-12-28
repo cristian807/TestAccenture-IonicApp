@@ -1,0 +1,123 @@
+/**
+ * Estilos de la página de Categorías
+ */
+
+// Sección de agregar categoría
+.add-category-section {
+  background: var(--ion-color-light);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 24px;
+  
+  h3 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    color: var(--ion-color-dark);
+  }
+  
+  .category-input {
+    --background: white;
+    border-radius: 8px;
+    margin-bottom: 12px;
+  }
+}
+
+// Selector de colores
+.color-selector {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  padding: 8px 0;
+  
+  ion-icon {
+    font-size: 20px;
+    color: var(--ion-color-medium);
+  }
+  
+  span {
+    color: var(--ion-color-medium);
+    font-size: 0.9rem;
+  }
+  
+  .color-options {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  
+  .color-option {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 2px solid transparent;
+    
+    &:hover {
+      transform: scale(1.1);
+    }
+    
+    &.selected {
+      border-color: var(--ion-color-dark);
+      box-shadow: 0 0 0 2px white, 0 0 0 4px var(--ion-color-dark);
+      transform: scale(1.1);
+    }
+  }
+}
+
+// Divisor
+.divider {
+  height: 1px;
+  background: var(--ion-color-light-shade);
+  margin: 24px 0;
+}
+
+// Indicador de color en la lista
+.color-indicator {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+// Lista de categorías
+ion-item-sliding {
+  margin-bottom: 4px;
+  
+  ion-item {
+    --border-radius: 8px;
+  }
+}
+
+// Título de sección
+h3 {
+  color: var(--ion-color-dark);
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+
+// Estado vacío
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 24px;
+  text-align: center;
+  
+  ion-icon {
+    font-size: 64px;
+    color: var(--ion-color-medium);
+    margin-bottom: 16px;
+  }
+  
+  h2 {
+    color: var(--ion-color-dark);
+    margin-bottom: 8px;
+  }
+  
+  p {
+    color: var(--ion-color-medium);
+  }
+}
