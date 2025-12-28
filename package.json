@@ -10,8 +10,6 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "ionic:serve": "ionic serve",
-    "ionic:build": "ionic build",
     "android": "ionic capacitor run android",
     "ios": "ionic capacitor run ios",
     "build:android": "ionic capacitor build android",
