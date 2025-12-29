@@ -36,7 +36,7 @@ cd todo-app && npm install
 
 ### Paso 3: Ejecutar en el navegador
 ```bash
-ionic serve o npx ng serve --port 8100 --open
+ionic serve || npx ng serve --port 8100 --open
 ```
 La aplicación se abrirá en `http://localhost:8100`
 
