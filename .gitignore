@@ -14,7 +14,7 @@ ios/
 .env
 .env.local
 
-# 🔐 CREDENCIALES DE FIREBASE - NO SUBIR
+# CREDENCIALES DE FIREBASE - NO SUBIR
 src/app/config/firebase.credentials.ts
 
 # Archivos de IDE
