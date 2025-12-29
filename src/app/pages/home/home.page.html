@@ -1,35 +1,24 @@
-<!-- 
-  Página Principal - Lista de Tareas
-  
-  Esta es la pantalla principal de la aplicación donde se muestran
-  todas las tareas y se pueden agregar nuevas.
--->
 
-<!-- Header / Barra superior -->
 <ion-header>
   <ion-toolbar color="primary">
-    <!-- Botón del menú lateral -->
     <ion-buttons slot="start">
+      <ion-title>Mis Tareas</ion-title>
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     
-    <ion-title>📋 Mis Tareas</ion-title>
+    <ion-title>Mis Tareas</ion-title>
     
-    <!-- Botones de navegación -->
     <ion-buttons slot="end">
-      <!-- Botón de categorías (solo si está habilitado) -->
       <ion-button *ngIf="categoriesEnabled" routerLink="/categories">
         <ion-icon slot="icon-only" name="folder-outline"></ion-icon>
       </ion-button>
       
-      <!-- Botón de configuración -->
       <ion-button routerLink="/settings">
         <ion-icon slot="icon-only" name="settings-outline"></ion-icon>
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
   
-  <!-- Barra de filtro por categoría (solo si está habilitado) -->
   <ion-toolbar *ngIf="categoriesEnabled">
     <ion-item lines="none">
       <ion-icon name="filter-outline" slot="start"></ion-icon>
@@ -49,10 +38,8 @@
   </ion-toolbar>
 </ion-header>
 
-<!-- Contenido principal -->
 <ion-content class="ion-padding">
   
-  <!-- Sección para agregar nueva tarea -->
   <div class="add-task-section">
     <ion-item class="new-task-input">
       <ion-input 
@@ -62,7 +49,6 @@
       </ion-input>
     </ion-item>
     
-    <!-- Selector de categoría para nueva tarea (si está habilitado) -->
     <ion-item *ngIf="categoriesEnabled" lines="none" class="category-selector">
       <ion-select 
         [(ngModel)]="newTaskCategoryId" 
@@ -82,7 +68,6 @@
       </ion-button>
     </ion-item>
     
-    <!-- Botón de agregar (si categorías deshabilitadas) -->
     <ion-button 
       *ngIf="!categoriesEnabled" 
       expand="block" 
@@ -93,7 +78,6 @@
     </ion-button>
   </div>
   
-  <!-- Contador de tareas -->
   <div class="task-counter" *ngIf="tasks.length > 0">
     <ion-text color="medium">
       {{ tasks.length }} tarea(s) 
@@ -103,25 +87,19 @@
     </ion-text>
   </div>
   
-  <!-- Lista de tareas -->
   <ion-list *ngIf="tasks.length > 0">
-    <!-- Cada tarea es deslizable para mostrar opciones -->
     <ion-item-sliding *ngFor="let task of tasks; trackBy: trackByTaskId">
       
-      <!-- Item de la tarea -->
       <ion-item [class.task-completed]="task.completed">
-        <!-- Checkbox para marcar como completada -->
         <ion-checkbox 
           slot="start" 
           [checked]="task.completed"
           (ionChange)="toggleComplete(task)">
         </ion-checkbox>
         
-        <!-- Información de la tarea -->
         <ion-label>
           <h2>{{ task.title }}</h2>
           
-          <!-- Badge de categoría (si tiene y está habilitado) -->
           <ion-badge 
             *ngIf="categoriesEnabled && task.categoryId"
             [style.background-color]="getCategoryColor(task.categoryId)"
@@ -130,7 +108,6 @@
           </ion-badge>
         </ion-label>
         
-        <!-- Icono de completado -->
         <ion-icon 
           *ngIf="task.completed" 
           name="checkmark-done-outline" 
@@ -139,7 +116,6 @@
         </ion-icon>
       </ion-item>
       
-      <!-- Opciones al deslizar (borrar) -->
       <ion-item-options side="end">
         <ion-item-option color="danger" (click)="deleteTask(task)">
           <ion-icon slot="icon-only" name="trash-outline"></ion-icon>
@@ -149,7 +125,6 @@
     </ion-item-sliding>
   </ion-list>
   
-  <!-- Estado vacío - cuando no hay tareas -->
   <div class="empty-state" *ngIf="tasks.length === 0">
     <ion-icon name="list-outline"></ion-icon>
     <h2>No hay tareas</h2>

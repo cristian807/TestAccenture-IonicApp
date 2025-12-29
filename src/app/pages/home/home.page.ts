@@ -49,16 +49,6 @@ import { StorageService } from '../../services/storage.service';
 import { CategoryService } from '../../services/category.service';
 import { FirebaseService } from '../../services/firebase.service';
 
-/**
- * Página Principal - Lista de Tareas
- * 
- * Esta página muestra la lista de tareas y permite:
- * - Ver todas las tareas
- * - Agregar nuevas tareas
- * - Marcar tareas como completadas
- * - Eliminar tareas (deslizando)
- * - Filtrar por categoría
- */
 @Component({
   selector: 'app-home',
   standalone: true,

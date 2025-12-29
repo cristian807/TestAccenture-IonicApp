@@ -26,7 +26,6 @@ export class CategoryService {
         const categories = JSON.parse(categoriesJson);
         this.categoriesSubject.next(categories);
       } else {
-        // Crear categorías por defecto si no hay ninguna
         this.createDefaultCategories();
       }
     } catch (error) {

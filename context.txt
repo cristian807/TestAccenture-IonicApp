@@ -1,0 +1,51 @@
+Hola,
+
+Te compartimos a continuación la prueba técnica correspondiente al rol de Desarrollador Frontend, la cual hace parte del proceso de evaluación técnica para nuestra vacante actual.
+
+ 
+
+Adjunto encontrarás la prueba técnica, la cual tiene como objetivo evaluar tus habilidades en el desarrollo de aplicaciones híbridas utilizando Ionic y Angular. Es fundamental que, al desarrollarla, tengas en cuenta todos los requerimientos técnicos establecidos, ya que estos serán criterios clave para la evaluación.
+
+ 
+
+Resumen de la prueba:
+
+ 
+
+•            Desarrollar una aplicación To-Do List con funcionalidades para agregar, completar, eliminar y categorizar tareas.
+
+•            Utilizar almacenamiento local y permitir el filtrado por categoría.
+
+•            Configurar la aplicación para ser compilada en Android e iOS usando Cordova.
+
+•            Integrar Firebase y Remote Config para una funcionalidad de feature flag.
+
+•            Aplicar técnicas de optimización de rendimiento (inicio, manejo de datos y uso de memoria).
+
+•            Entregar archivos APK e IPA exportados y funcionales.
+
+ 
+
+Requisitos clave:
+
+ 
+
+•            Uso de control de versiones con Git (repositorio público).
+
+•            Estructura compatible para plataformas móviles.
+
+•            Inclusión de un archivo README detallado.
+
+•            Capturas o videos de la funcionalidad implementada.
+
+•            Respuestas a preguntas técnicas sobre desafíos, optimización y calidad del código.
+
+•            Entrega antes de la fecha límite indicada.
+
+ 
+
+Esta prueba debe ser desarrollada siguiendo buenas prácticas de desarrollo y principios de arquitectura limpia. Tendrás un plazo de dos (2) días hábiles para completar y entregar tu solución.
+
+ 
+
+Quedo atenta cualquier duda que tengas durante el desarrollo de la prueba.

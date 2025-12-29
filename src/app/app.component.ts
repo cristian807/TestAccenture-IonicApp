@@ -47,7 +47,7 @@ import {
       <ion-menu contentId="main-content" type="overlay">
         <ion-header>
           <ion-toolbar color="primary">
-            <ion-title>📋 Menú</ion-title>
+            <ion-title>Menú</ion-title>
           </ion-toolbar>
         </ion-header>
         <ion-content>

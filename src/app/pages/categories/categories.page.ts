@@ -38,15 +38,7 @@ import { Category, CATEGORY_COLORS } from '../../models/category.model';
 import { CategoryService } from '../../services/category.service';
 import { StorageService } from '../../services/storage.service';
 
-/**
- * Página de Categorías
- * 
- * Esta página permite gestionar las categorías:
- * - Ver todas las categorías
- * - Crear nuevas categorías
- * - Editar categorías existentes
- * - Eliminar categorías
- */
+
 @Component({
   selector: 'app-categories',
   standalone: true,
@@ -80,16 +72,16 @@ export class CategoriesPage implements OnInit, OnDestroy {
   // Lista de categorías
   categories: Category[] = [];
   
-  // Nombre de la nueva categoría
+
   newCategoryName: string = '';
   
-  // Color seleccionado para nueva categoría
+
   selectedColor: string = CATEGORY_COLORS[0];
   
-  // Colores disponibles
+
   availableColors = CATEGORY_COLORS;
   
-  // Suscripciones
+
   private subscriptions: Subscription[] = [];
 
   constructor(
@@ -121,9 +113,7 @@ export class CategoriesPage implements OnInit, OnDestroy {
     this.subscriptions.forEach(sub => sub.unsubscribe());
   }
 
-  /**
-   * Agrega una nueva categoría
-   */
+
   async addCategory(): Promise<void> {
     if (!this.newCategoryName.trim()) {
       await this.showToast('Escribe un nombre para la categoría', 'warning');
@@ -137,9 +127,7 @@ export class CategoriesPage implements OnInit, OnDestroy {
     await this.showToast('Categoría creada', 'success');
   }
 
-  /**
-   * Edita una categoría existente
-   */
+
   async editCategory(category: Category): Promise<void> {
     const alert = await this.alertController.create({
       header: 'Editar Categoría',
@@ -170,9 +158,7 @@ export class CategoriesPage implements OnInit, OnDestroy {
     await alert.present();
   }
 
-  /**
-   * Elimina una categoría con confirmación
-   */
+
   async deleteCategory(category: Category): Promise<void> {
     const taskCount = this.storageService.countTasksByCategory(category.id);
     
@@ -199,23 +185,16 @@ export class CategoriesPage implements OnInit, OnDestroy {
     await alert.present();
   }
 
-  /**
-   * Selecciona un color para la nueva categoría
-   */
+
   selectColor(color: string): void {
     this.selectedColor = color;
   }
 
-  /**
-   * Cuenta las tareas de una categoría
-   */
+
   getTaskCount(categoryId: string): number {
     return this.storageService.countTasksByCategory(categoryId);
   }
 
-  /**
-   * Muestra un mensaje toast
-   */
   private async showToast(message: string, color: string): Promise<void> {
     const toast = await this.toastController.create({
       message: message,
@@ -226,9 +205,7 @@ export class CategoriesPage implements OnInit, OnDestroy {
     await toast.present();
   }
 
-  /**
-   * TrackBy para optimizar renderizado
-   */
+
   trackByCategoryId(index: number, category: Category): string {
     return category.id;
   }

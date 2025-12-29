@@ -1,44 +1,15 @@
-<!-- 
-  Página de Configuración
-  
-  Demuestra el uso de Firebase Remote Config (Feature Flags)
-  para activar/desactivar funcionalidades de la app.
--->
 
-<!-- Header -->
 <ion-header>
   <ion-toolbar color="primary">
-    <!-- Botón del menú lateral -->
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>⚙️ Configuración</ion-title>
+    <ion-title>Configuración</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<!-- Contenido -->
 <ion-content class="ion-padding">
   
-  <!-- Card explicativo -->
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>
-        <ion-icon name="cloud-outline"></ion-icon>
-        Firebase Remote Config
-      </ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <p>
-        Esta sección simula <strong>Firebase Remote Config</strong>, 
-        que permite cambiar el comportamiento de la app sin necesidad 
-        de publicar una actualización.
-      </p>
-      <p>
-        En producción, estos valores se cambiarían desde la consola 
-        de Firebase.
-      </p>
-    </ion-card-content>
-  </ion-card>
   
   <!-- Feature Flags -->
   <h3>Feature Flags</h3>
@@ -93,18 +64,5 @@
       </ion-input>
     </ion-item>
   </ion-list>
-  
-  <!-- Información adicional -->
-  <ion-card class="info-card">
-    <ion-card-content>
-      <ion-icon name="information-circle-outline"></ion-icon>
-      <p>
-        <strong>¿Cómo probarlo?</strong><br>
-        1. Desactiva "Habilitar Categorías"<br>
-        2. Vuelve a la pantalla principal<br>
-        3. Notarás que el filtro y selector de categorías desaparecen
-      </p>
-    </ion-card-content>
-  </ion-card>
 
 </ion-content>
