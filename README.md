@@ -90,25 +90,25 @@ La aplicación usa Firebase Remote Config para controlar funcionalidades:
 ## Pruebas de funcionalidad
 
 ## Agregar tareas
-![alt text](./www/image.png)
+![alt text](./src/images/image.png)
 
 ### Tarea marcada como completada
-![alt text](./www/image-1.png)
+![alt text](./src/images/image-1.png)
 
 ### Eliminar tarea
-![alt text](./www/image-2.png)
+![alt text](./src/images/image-2.png)
 
 ### Filtro de tareas por categorias 
-![alt text](./www/image-3.png)
+![alt text](./src/images/image-3.png)
 
 
 ## Categorias
 
 ### Agregar nueva categoria
-![alt text](./www/image-4.png)
+![alt text](./src/images/image-4.png)
 
 ## Configuracion de feacture flags
-![alt text](./www/image-5.png)
+![alt text](./src/images/image-5.png)
 
 
 ## Respuestas a Preguntas
