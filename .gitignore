@@ -1,6 +1,6 @@
 # Dependencias de Node
 node_modules/
-.Angular/
+/.Angular
 
 # Carpeta de compilación
 www/
