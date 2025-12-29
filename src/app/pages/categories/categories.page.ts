@@ -14,6 +14,7 @@ import {
   IonIcon,
   IonButtons,
   IonBackButton,
+  IonMenuButton,
   IonItemSliding,
   IonItemOptions,
   IonItemOption,
@@ -28,7 +29,8 @@ import {
   trashOutline, 
   createOutline,
   folderOutline,
-  colorPaletteOutline
+  colorPaletteOutline,
+  menuOutline
 } from 'ionicons/icons';
 import { Subscription } from 'rxjs';
 
@@ -63,6 +65,7 @@ import { StorageService } from '../../services/storage.service';
     IonIcon,
     IonButtons,
     IonBackButton,
+    IonMenuButton,
     IonItemSliding,
     IonItemOptions,
     IonItemOption,
@@ -101,7 +104,8 @@ export class CategoriesPage implements OnInit, OnDestroy {
       trashOutline, 
       createOutline,
       folderOutline,
-      colorPaletteOutline
+      colorPaletteOutline,
+      menuOutline
     });
   }
 

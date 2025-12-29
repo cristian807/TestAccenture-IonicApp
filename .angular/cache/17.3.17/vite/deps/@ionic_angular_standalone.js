@@ -96,10 +96,6 @@ import {
   win
 } from "./chunk-R3LVCYXH.js";
 import {
-  NG_VALUE_ACCESSOR,
-  NgControl
-} from "./chunk-23IFALOF.js";
-import {
   ActivatedRoute,
   ChildrenOutletContexts,
   NavigationStart,
@@ -109,6 +105,10 @@ import {
   UrlSerializer
 } from "./chunk-E6O4GO77.js";
 import "./chunk-SHDWYYMW.js";
+import {
+  NG_VALUE_ACCESSOR,
+  NgControl
+} from "./chunk-23IFALOF.js";
 import {
   CommonModule,
   DOCUMENT,

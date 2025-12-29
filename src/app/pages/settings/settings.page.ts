@@ -13,6 +13,7 @@ import {
   IonIcon,
   IonButtons,
   IonBackButton,
+  IonMenuButton,
   IonNote,
   IonInput,
   IonCard,
@@ -26,7 +27,8 @@ import {
   settingsOutline, 
   toggleOutline,
   cloudOutline,
-  informationCircleOutline
+  informationCircleOutline,
+  menuOutline
 } from 'ionicons/icons';
 import { Subscription } from 'rxjs';
 
@@ -58,6 +60,7 @@ import { FirebaseService, FeatureFlags } from '../../services/firebase.service';
     IonIcon,
     IonButtons,
     IonBackButton,
+    IonMenuButton,
     IonNote,
     IonInput,
     IonCard,
@@ -88,7 +91,8 @@ export class SettingsPage implements OnInit, OnDestroy {
       settingsOutline, 
       toggleOutline,
       cloudOutline,
-      informationCircleOutline
+      informationCircleOutline,
+      menuOutline
     });
   }
 

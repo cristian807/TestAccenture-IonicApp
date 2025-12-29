@@ -26,6 +26,7 @@ import {
   IonSelectOption,
   IonNote,
   IonText,
+  IonMenuButton,
   AlertController,
   ToastController
 } from '@ionic/angular/standalone';
@@ -37,7 +38,8 @@ import {
   filterOutline,
   settingsOutline,
   folderOutline,
-  listOutline
+  listOutline,
+  menuOutline
 } from 'ionicons/icons';
 import { Subscription } from 'rxjs';
 
@@ -86,7 +88,8 @@ import { FirebaseService } from '../../services/firebase.service';
     IonSelect,
     IonSelectOption,
     IonNote,
-    IonText
+    IonText,
+    IonMenuButton
   ],
   templateUrl: './home.page.html',
   styleUrls: ['./home.page.scss']
@@ -129,7 +132,8 @@ export class HomePage implements OnInit, OnDestroy {
       filterOutline,
       settingsOutline,
       folderOutline,
-      listOutline
+      listOutline,
+      menuOutline
     });
   }
 
